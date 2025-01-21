@@ -1,4 +1,6 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Shared Style */
 * {
@@ -8,6 +10,10 @@
 header {
   /* White */
   background: rgb(247, 247, 247);
+}
+
+section {
+  padding: 0px 140px;
 }
 
 .show {
@@ -30,6 +36,19 @@ header {
   color: rgb(93, 88, 239);
 }
 
+.btn {
+  width: 197px;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  border-radius: 12px;
+  /* Black */
+  background: rgb(17, 17, 17);
+  padding: 10px;
+}
 /* Navbar */
 nav,
 nav ul,
@@ -117,20 +136,6 @@ a {
   margin-bottom: 24px;
 }
 
-.banner-btn {
-  width: 197px;
-  color: rgb(255, 255, 255);
-  font-family: Quicksand;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0%;
-  border-radius: 12px;
-  /* Black */
-  background: rgb(17, 17, 17);
-  padding: 10px;
-}
-
 /* Curriculum Section */
 .title {
   color: rgb(0, 0, 0);
@@ -144,11 +149,9 @@ a {
 }
 
 #curriculum {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  background-image: url("assets/bg.png");
-  width: 100%;
-  object-fit: fill;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url("assets/bg.png"), rgb(247, 247, 247);
 }
 
 .curriculum-card-container {
@@ -245,6 +248,186 @@ a {
   border-radius: 50%;
   background-color: orange;
 }
+
+/* Our Stories Section */
+#stories {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url("assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+/* Specific areas */
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.stories-card-container {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item1 item4 item5";
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.stories-card-1 {
+  width: 540.27px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.stories-card-1 img {
+  border-radius: 16px 16px 0 0;
+}
+
+.stories-card-1 h3,
+.stories-card-1 .curriculum-subtitle {
+  width: 410px;
+  text-align: left;
+}
+
+.stories-card {
+  width: 290.69px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.stories-card img {
+  border-radius: 16px 16px 0 0;
+}
+
+.stories-card .curriculum-title {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 15.34px;
+  font-weight: 700;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.content {
+  padding: 0 30px 30px 30px;
+}
+
+.date {
+  width: 174.51px;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 47.93px;
+  background: rgb(149, 178, 38);
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+
+.date-1 {
+  background: rgb(60, 216, 232);
+  position: relative;
+  bottom: 20px;
+  right: 150px;
+}
+
+/* Footer */
+#footer {
+  background: rgb(1, 172, 253);
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+#footer h3 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-content-sitename {
+  display: flex;
+  width: 290px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+
+.footer-content-title {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 42.14px;
+  font-weight: 700;
+  line-height: 39.51px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-content-subtitle {
+  width: 399.02px;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links a {
+  margin-left: 0;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-social {
+  margin-top: 0;
+}
+
+.social-logos {
+  margin-top: 32px;
+  display: flex;
+  gap: 10px;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
   .hidden {
@@ -253,6 +436,10 @@ a {
 
   .show {
     display: block;
+  }
+
+  section {
+    padding: 0;
   }
 
   nav {
@@ -308,5 +495,70 @@ a {
 
   .title {
     font-size: 30px;
+  }
+  .stories-card-container {
+    width: auto;
+    grid-template-areas:
+      "item2 item3"
+      "item6 item7"
+      "item4 item5";
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+  }
+
+  .stories-card {
+    width: 173.09px;
+    height: auto;
+  }
+
+  .stories-card img {
+    width: 100%;
+  }
+
+  .stories-card .curriculum-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17.12px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .date {
+    font-size: 10px;
+    width: auto;
+  }
+
+  .item4 .content {
+    padding-bottom: 15px;
+  }
+
+  #footer {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-content-subtitle {
+    width: 357px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .footer-links {
+    margin-left: 0;
+  }
+
+  .footer-social {
+    margin-left: 0;
   }
 }
