@@ -5,6 +5,11 @@
   margin: auto;
 }
 
+header {
+  /* White */
+  background: rgb(247, 247, 247);
+}
+
 .show {
   display: none;
 }
@@ -126,6 +131,120 @@ a {
   padding: 10px;
 }
 
+/* Curriculum Section */
+.title {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#curriculum {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-image: url("assets/bg.png");
+  width: 100%;
+  object-fit: fill;
+}
+
+.curriculum-card-container {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.curriculum-card {
+  text-align: center;
+  width: 367.8px;
+  padding: 53px 40px 53px 40px;
+}
+
+.card-1-color {
+  box-sizing: border-box;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card-2-color {
+  box-sizing: border-box;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card-3-color {
+  box-sizing: border-box;
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.read-1 {
+  color: rgb(100, 200, 255);
+}
+
+.read-2 {
+  color: rgb(240, 170, 0);
+}
+
+.read-3 {
+  color: rgb(135, 0, 255);
+}
+.curriculum-title {
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 30.65px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.curriculum-subtitle {
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  width: 130px;
+}
+
+.btn-container button {
+  border-style: none;
+  border-radius: 50%;
+  background-color: orange;
+}
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
   .hidden {
@@ -164,6 +283,7 @@ a {
   }
 
   .banner-subtitle {
+    width: 286.26px;
     color: rgb(17, 17, 17);
     font-family: Quicksand;
     font-size: 14px;
@@ -175,5 +295,18 @@ a {
 
   .banner-img {
     width: 100%;
+  }
+
+  .curriculum-card-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .curriculum-card {
+    width: calc(100% - 40px);
+  }
+
+  .title {
+    font-size: 30px;
   }
 }
