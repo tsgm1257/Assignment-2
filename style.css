@@ -49,7 +49,19 @@ section {
   background: rgb(17, 17, 17);
   padding: 10px;
 }
+
 /* Navbar */
+.marquee {
+  background-color: beige;
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  border-left: 5px solid rgb(255, 204, 0);
+}
+
 nav,
 nav ul,
 .logo {
@@ -152,6 +164,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background: url("assets/bg.png"), rgb(247, 247, 247);
+  background-repeat: repeat-x;
 }
 
 .curriculum-card-container {
@@ -244,9 +257,15 @@ a {
 }
 
 .btn-container button {
+  width: 60px;
+  height: 60px;
   border-style: none;
   border-radius: 50%;
   background-color: orange;
+}
+
+.btn-container button:hover {
+  background-color: rgb(141, 95, 9);
 }
 
 /* Our Stories Section */
@@ -256,7 +275,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background: url("assets/bg.png"),
-    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(235, 230, 230, 0.3) 100%);
 }
 
 /* Specific areas */
@@ -353,6 +372,10 @@ a {
   position: relative;
   bottom: 20px;
   right: 150px;
+}
+
+.date-2 {
+  background: rgb(93, 88, 240);
 }
 
 /* Footer */
@@ -490,11 +513,12 @@ a {
   }
 
   .curriculum-card {
-    width: calc(100% - 40px);
+    width: 92%;
   }
 
   .title {
     font-size: 30px;
+    margin-bottom: 20px;
   }
   .stories-card-container {
     width: auto;
@@ -539,12 +563,15 @@ a {
   #footer {
     flex-direction: column;
     gap: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+  }
+
+  .footer-content {
+    margin-left: 0;
   }
 
   .footer-content-subtitle {
-    width: 357px;
+    width: 310px;
     color: rgb(255, 255, 255);
     font-family: Quicksand;
     font-size: 16px;
